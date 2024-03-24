@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood</title>
+    <link rel="stylesheet" href="src/mood.css" />
+    <script src="src/6lack.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Madimi+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <nav>
+      <a href="6lackfinal.html" class="logo">
+        <h1 class="roboto-mono-robot">Rhythmic Journeys</h1>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-list"><a href="6lackfinal.html">Home</a></li>
+        <li class="nav-list"><a href="mood.html">Mood</a></li>
+        <li class="nav-list"><a href="toppick.html">Top Picks</a></li>
+        <li class="nav-list"><a href="knowmeter.html">KnowMeter</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <section class="container">
+      <p>
+        Welcome, fellow music adventurer! Buckle up as we embark on a sonic
+        journey into the vibrant realm of beats and rhythms. Imagine a world
+        where every note is a brushstroke, and the canvas is your imagination.
+        I've curated a tracklist that's not just a playlist but a portal into my
+        beat-infused wonderland.<br />
+        <br />
+        So, if you're ready to groove, let's press play and let the beats paint
+        the landscape of our musical escapade!
+      </p>
+      <br />
+      <br />
+
+      <!--FORM-->
+
+      <form action="#" method="post" onsubmit="return showSongs();">
+        <label for="mood">Select your mood:</label>
+        <select id="mood" name="mood">
+          <option value="happy">Happy</option>
+          <option value="Love">Love</option>
+          <option value="heartBreak">Heart Break</option>
+          <option value="reflective">Reflective</option>
+          <option value="calm">Calm/Vibes</option>
+        </select>
+        <br />
+
+        <input type="submit" value="Submit" />
+
+        <div class="loader-container">
+          <div class="loader"></div>
+        </div>
+      </form>
+
+      <section class="list-container">
+        <div id="songs-container"></div>
+      </section>
+    </section>
+
+    <section class="outer">
+      <h2>6LACKIVERSE</h2>
+    </section>
+  </body>
+</html>

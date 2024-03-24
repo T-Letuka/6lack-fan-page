@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Picks</title>
+    <link rel="stylesheet" href="src/toppick.css" />
+  </head>
+  <header>
+    <nav>
+      <a href="6lackfinal.html" class="logo">
+        <h1 class="roboto-mono-robot">Mellow Escapes</h1>
+      </a>
+      <ul class="nav-list">
+        <li><a href="6lackfinal.html">Home</a></li>
+        <li><a href="mood.html">Mood</a></li>
+        <li><a href="toppick.html">Top Picks</a></li>
+        <li><a href="knowmeter.html">KnowMeter</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <h1 class="intro">Dive into my favourites</h1>
+
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <p>Seasons</p>
+
+        <p class="artist">6lack feat Khalid</p>
+        <br />
+        <q class="favorite-line"
+          >You're lucky the greatest thing I can do is marry you <br />'Cause if
+          I could, I'd spill my blood <br />Down to give you my last breath</q
+        >
+      </div>
+
+      <div class="mySlides">
+        <p>Pretty Little Fears</p>
+        <p class="artist">6lack ft Khalid</p>
+        <q class="favorite-line"
+          >I'm loving your light, vulnerable<br />
+          Letting your guard down, it's honorable <br />'Specially when the past
+          ain't been that<br />
+          Friendly to you, but there’s magic in that<br />
+          You the flower that I gotta protect</q
+        >
+      </div>
+      <div class="mySlides">
+        <p>Outside</p>
+        <p class="artist">6lack</p>
+        <q class="favorite-line"
+          >I'll give you the time of your life<br />
+          Just wait 'til we can go outside</q
+        >
+      </div>
+      <div class="mySlides">
+        <p>Learn Ya</p>
+        <p class="artist">6lack</p>
+        <q class="favorite-line"
+          >Uh, you still got a lot to learn<br />
+          I ain't saying I'm the best<br />
+          I'm saying that I got a lot to work with ya</q
+        >
+      </div>
+      <div class="mySlides">
+        <p>Temporary</p>
+        <p class="artist">6lack</p>
+        <q class="favorite-line"
+          >Don't take it personal <br />You know I know it hurts to go</q
+        >
+      </div>
+      <div class="mySlides">
+        <p>Cutting Ties</p>
+        <p class="artist">6lack</p>
+      </div>
+      <div class="mySlides">
+        <p>In Between</p>
+        <p class="artist">6lack feat Banks</p>
+      </div>
+      <div class="mySlides">
+        <p>Imported</p>
+        <p class="artist">6lack feat Jessie Reyez</p>
+      </div>
+      <div class="mySlides">
+        <p>Homicide</p>
+        <p class="artist">6lack feat Jessie Reyez</p>
+        <q class="favorite-line"
+          >I can't have you thinkin' that I'm out here tellin' lies</q
+        >
+      </div>
+      <div class="mySlides">
+        <p>Wunna dem</p>
+        <p class="artist">6lack feat Quin</p>
+        <q class="favorite-line"
+          >Wind might carry us farther, just open your arms<br />
+          Rain might pour a lil' longer, just weather the storm<br />
+          Long as I got you and you got me</q
+        >
+      </div>
+
+      <div class="mySlides">
+        <p>Stan</p>
+        <p class="artist">6lack</p>
+        <q class="favorite-line"
+          >Down to walk the walk until the end The prize, you find a lover and a
+          friend</q
+        >
+      </div>
+
+      <div class="mySlides">
+        <p>Disconnect</p>
+        <p class="artist">6lack</p>
+        <q class="favourite-line"
+          >Love is not looking over shoulders<br />
+          Love is you should trust what I told you<br />
+          Lately it's like you been speaking fantasy and I'm speaking reality
+          'Cause we got problems we ain’t getting over<br />
+          I think we breaking up And not just on some boyfriend-girlfriend shit
+          I think we had enough</q
+        >
+      </div>
+
+      <div class="mySlides">
+        <p>Switch</p>
+        <p class="artist">6lack ft Ty dollar $ign</p>
+        <q class="favorite-line">
+          If I give you my heart, would you hold that? <br />Would you put it up
+          safe or would you fold that?</q
+        >
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+      <span class="dot" onclick="currentSlide(12)"></span>
+      <span class="dot" onclick="currentSlide(13)"></span>
+    </div>
+    <section class="outer">
+      <h2>6LACKIVERSE</h2>
+    </section>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

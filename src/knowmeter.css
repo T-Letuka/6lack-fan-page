@@ -1,0 +1,134 @@
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --primary-color: #ffafcc;
+  --secondary-color: #ff47da;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+ul,
+li {
+  list-style: none;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+  box-shadow: 2px 3px 2px whitesmoke;
+}
+nav {
+  background: rgb(17, 17, 17);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 5px 2px #d3d2d2ad;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.roboto-mono-robot {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+#quiz-title {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+#quiz-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+.btn1 {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  background-color: #ffafcc6c;
+  transition: all 0.4s ease-in;
+}
+
+.btn1:hover:not([disabled]) {
+  background: rgba(0, 0, 0, 0.938);
+  font-size: 17px;
+  color: white;
+}
+
+.btn1:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background-color: black;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto 0;
+  display: none;
+}
+
+#next-btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.correct {
+  background-color: rgba(6, 167, 6, 0.507);
+}
+
+.incorrect {
+  background-color: rgba(255, 0, 0, 0.712);
+}
+
+.outer {
+  position: relative;
+  border-radius: 30px;
+}
+
+.outer h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
+}

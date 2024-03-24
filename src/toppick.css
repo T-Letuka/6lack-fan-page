@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --primary-color: #ffafcc;
+  --secondary-color: #ff47da;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  margin: 10px auto;
+}
+.intro {
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  background: none;
+  box-shadow: none;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+  padding: 5px;
+  font-weight: bold;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+.slideshow-container {
+  background: rgba(0, 0, 0, 0.582);
+  box-shadow: 2px 2px var(--secondary-color);
+  position: relative;
+  margin: 0 auto;
+  max-width: 80%;
+  border-radius: 25px;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #f815d2;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.493);
+  margin: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 60%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: var(--primary-color);
+}
+
+p {
+  font-style: italic;
+  font-size: 25px;
+}
+
+.artist {
+  color: white;
+  font-size: 20px;
+}
+.outer {
+  position: relative;
+  border-radius: 30px;
+}
+.outer h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
+}
